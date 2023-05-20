@@ -14,15 +14,33 @@ struct HomePage: View {
     @ObservedObject private var viewModel = HomePageViewModel()
     
     var body: some View {
-        VStack(spacing: 50) {
-            Text(viewModel.sonuc)
-                .font(.system(size: 50))
-            HStack {
+        VStack(spacing: 25) {
+            
+            VStack {
                 TextField("Sayı 1",text: $num1)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                                   .padding()
+                                   .frame(width: 250, height: 50)
                 TextField("Sayı 2",text: $num2)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-            }.padding(.horizontal,30)
+                                   .padding()
+                                   .frame(width: 250, height: 50)
+            }.padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 15)
+                        .fill(Color.gray.opacity(0.2))
+                        .padding(5)
+                )
+            
+            VStack(spacing:5){
+                Text(viewModel.sonuc)
+                    .font(.system(size: 40))
+            }.foregroundColor(.white)
+                .padding(.horizontal,25)
+                .padding(.vertical,15)
+                .background(Color.green)
+                .cornerRadius(10)
+            
             VStack {
                 HStack(spacing: 20){
                     Button("Toplama"){
@@ -38,6 +56,7 @@ struct HomePage: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
+                
                 HStack(spacing: 20){
                     Button("Çarpma"){
                         viewModel.carpmaYap(alinanSayi1: num1, alinanSayi2: num2)
