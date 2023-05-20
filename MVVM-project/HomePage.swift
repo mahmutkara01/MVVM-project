@@ -17,16 +17,32 @@ struct HomePage: View {
         VStack(spacing: 50) {
             Text(viewModel.sonuc)
                 .font(.system(size: 50))
-            TextField("Sayı 1",text: $num1)
-                .textFieldStyle(RoundedBorderTextFieldStyle()).padding(.horizontal,25)
-            TextField("Sayı 2",text: $num2)
-                .textFieldStyle(RoundedBorderTextFieldStyle()).padding(.horizontal,25)
-            HStack(spacing: 50){
-                Button("Toplama"){
-                    viewModel.toplamaYap(alinanSayi1: num1, alinanSayi2: num2)
+            HStack {
+                TextField("Sayı 1",text: $num1)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("Sayı 2",text: $num2)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            }.padding(.horizontal,30)
+            VStack {
+                HStack(spacing: 20){
+                    Button("Toplama"){
+                        viewModel.toplamaYap(alinanSayi1: num1, alinanSayi2: num2)
+                    }.buttonStyle(.borderedProminent)
+                        .frame(width: 100,height: 50)
+                    Button("Çıkarma"){
+                        viewModel.cikarmaYap(alinanSayi1: num1, alinanSayi2: num2)
+                    }.buttonStyle(.borderedProminent)
+                        .frame(width: 100,height: 50)
                 }
-                Button("Çarpma"){
-                    viewModel.carpmaYap(alinanSayi1: num1, alinanSayi2: num2)
+                HStack(spacing: 20){
+                    Button("Çarpma"){
+                        viewModel.carpmaYap(alinanSayi1: num1, alinanSayi2: num2)
+                    }.buttonStyle(.borderedProminent)
+                        .frame(width: 100,height: 50)
+                    Button("Bölme"){
+                        viewModel.bolmeYap(alinanSayi1: num1, alinanSayi2: num2)
+                    }.buttonStyle(.borderedProminent)
+                        .frame(width: 100,height: 50)
                 }
             }
         }

@@ -22,4 +22,16 @@ class HomePageViewModel : ObservableObject {
             sonuc = String(carpma)
         }
     }
+    func cikarmaYap(alinanSayi1: String,alinanSayi2: String){
+        if let sayi1 = Int(alinanSayi1),let sayi2 = Int(alinanSayi2){
+            let cikarma = sayi1 - sayi2
+            sonuc = String(cikarma)
+        }
+    }
+    func bolmeYap(alinanSayi1: String,alinanSayi2: String){
+        if let sayi1 = Int(alinanSayi1),let sayi2 = Int(alinanSayi2){
+            let bolme = sayi1 / sayi2
+            sonuc = String(bolme)
+        }
+    }
 }
