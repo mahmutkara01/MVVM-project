@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		E26F8B312A190244007C9EB9 /* MVVM_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F8B302A190244007C9EB9 /* MVVM_projectApp.swift */; };
-		E26F8B332A190244007C9EB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F8B322A190244007C9EB9 /* ContentView.swift */; };
+		E26F8B332A190244007C9EB9 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F8B322A190244007C9EB9 /* HomePage.swift */; };
 		E26F8B352A190245007C9EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26F8B342A190245007C9EB9 /* Assets.xcassets */; };
 		E26F8B382A190245007C9EB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26F8B372A190245007C9EB9 /* Preview Assets.xcassets */; };
+		E26F8B3F2A190669007C9EB9 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F8B3E2A190669007C9EB9 /* HomePageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E26F8B2D2A190244007C9EB9 /* MVVM-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26F8B302A190244007C9EB9 /* MVVM_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_projectApp.swift; sourceTree = "<group>"; };
-		E26F8B322A190244007C9EB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E26F8B322A190244007C9EB9 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		E26F8B342A190245007C9EB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E26F8B372A190245007C9EB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E26F8B3E2A190669007C9EB9 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				E26F8B302A190244007C9EB9 /* MVVM_projectApp.swift */,
-				E26F8B322A190244007C9EB9 /* ContentView.swift */,
+				E26F8B322A190244007C9EB9 /* HomePage.swift */,
+				E26F8B3E2A190669007C9EB9 /* HomePageViewModel.swift */,
 				E26F8B342A190245007C9EB9 /* Assets.xcassets */,
 				E26F8B362A190245007C9EB9 /* Preview Content */,
 			);
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E26F8B332A190244007C9EB9 /* ContentView.swift in Sources */,
+				E26F8B332A190244007C9EB9 /* HomePage.swift in Sources */,
 				E26F8B312A190244007C9EB9 /* MVVM_projectApp.swift in Sources */,
+				E26F8B3F2A190669007C9EB9 /* HomePageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
