@@ -27,22 +27,30 @@ struct HomePage: View {
                 HStack(spacing: 20){
                     Button("Toplama"){
                         viewModel.toplamaYap(alinanSayi1: num1, alinanSayi2: num2)
-                    }.buttonStyle(.borderedProminent)
-                        .frame(width: 100,height: 50)
+                    }.frame(width: 100, height: 50)
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
                     Button("Çıkarma"){
                         viewModel.cikarmaYap(alinanSayi1: num1, alinanSayi2: num2)
-                    }.buttonStyle(.borderedProminent)
-                        .frame(width: 100,height: 50)
+                    }.frame(width: 100, height: 50)
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
                 }
                 HStack(spacing: 20){
                     Button("Çarpma"){
                         viewModel.carpmaYap(alinanSayi1: num1, alinanSayi2: num2)
-                    }.buttonStyle(.borderedProminent)
-                        .frame(width: 100,height: 50)
+                    }.frame(width: 100, height: 50)
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
                     Button("Bölme"){
                         viewModel.bolmeYap(alinanSayi1: num1, alinanSayi2: num2)
-                    }.buttonStyle(.borderedProminent)
-                        .frame(width: 100,height: 50)
+                    }.frame(width: 100, height: 50)
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
                 }
             }
         }
